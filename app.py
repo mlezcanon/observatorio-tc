@@ -135,6 +135,7 @@ with st.sidebar:
                     st.rerun()
             except Exception as e:
                 st.error(f'Error de acceso: {type(e).__name__}')
+                st.error(f'Detalle: {str(e)}')
     st.divider()
     st.caption('La consulta pública no necesita cuenta. La autorización para editar se comprueba en Supabase.')
     st.caption('Fuentes primarias: Tribunal Constitucional y Datos Abiertos del Estado Peruano.')
